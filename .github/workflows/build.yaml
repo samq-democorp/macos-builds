@@ -36,6 +36,6 @@ jobs:
         MEND_URL: https://saas.mend.io
       run: |
         echo "Downloading Mend CLI"
-        curl curl https://downloads.mend.io/cli/darwin_amd64/mend -o /usr/local/bin/mend && chmod +x /usr/local/bin/mend
+        curl https://downloads.mend.io/cli/darwin_amd64/mend -o /usr/local/bin/mend && chmod +x /usr/local/bin/mend
         echo "run Mend dependencies (SCA) scan"
         mend dep -u
