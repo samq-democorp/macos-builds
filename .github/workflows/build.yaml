@@ -35,7 +35,7 @@ jobs:
         MEND_USER_KEY: ${{secrets.MEND_SCA_USERKEY}}
         MEND_URL: https://saas.mend.io
       run: |
-        echo Downloading Mend CLI
+        echo "Downloading Mend CLI"
         curl https://downloads.mend.io/cli/linux_amd64/mend -o /usr/local/bin/mend && chmod +x /usr/local/bin/mend
-        echo run Mend dependencies (SCA) scan
+        echo "run Mend dependencies (SCA) scan"
         mend dep -u
