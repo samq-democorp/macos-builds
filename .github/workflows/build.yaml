@@ -28,7 +28,7 @@ jobs:
       with:
         node-version: 16
     - name: Install node modules
-      run: npm install --only=prod
+      run: npm install --only=prod --ignore-scripts
     - name: Mend CLI Scan
       env:
         MEND_EMAIL: ${{secrets.MEND_SCA_EMAIL}}
